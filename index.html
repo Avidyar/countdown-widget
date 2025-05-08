@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        :root {
+            --widget-width: 300px; /* Adjustable width */
+            --widget-height: 200px; /* Adjustable height */
+            --text-size: 24px; /* Adjustable text size */
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #191919; /* Change surrounding background color */
@@ -16,11 +22,13 @@
         }
         #countdown-widget {
             background: #1a323e; /* Keep widget background color unchanged */
+            width: var(--widget-width);
+            height: var(--widget-height);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            font-size: 24px;
+            font-size: var(--text-size);
         }
         #countdown {
             color: white; /* Change text color to white */
